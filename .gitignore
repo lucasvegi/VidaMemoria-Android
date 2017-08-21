@@ -11,3 +11,4 @@
 /app/app-release.apk
 /*.jks
 .idea/vcs.xml
+.idea/modules.xml
