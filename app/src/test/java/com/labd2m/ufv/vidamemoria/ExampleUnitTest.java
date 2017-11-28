@@ -1,4 +1,4 @@
-package com.example.luizh.vidamemoria_android;
+package com.labd2m.ufv.vidamemoria;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.example.luizh.vidamemoria_android;
+package com.labd2m.ufv.vidamemoria;
 
 import android.content.Intent;
 import android.os.Bundle;

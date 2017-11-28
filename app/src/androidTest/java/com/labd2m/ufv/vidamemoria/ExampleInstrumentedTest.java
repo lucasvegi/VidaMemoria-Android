@@ -1,4 +1,4 @@
-package com.example.luizh.vidamemoria_android;
+package com.labd2m.ufv.vidamemoria;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

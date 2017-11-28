@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.labd2m.ufv.vidamemoria.AboutActivity">
+
+    <RelativeLayout
+        android:id="@+id/fundo_texto_sobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:alpha="0.8"
+        android:padding="15dp"
+        android:background="@drawable/roundshapebranco">
+
+        <TextView
+            android:id="@+id/versaoSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tituloSobre"
+            android:layout_centerHorizontal="true"
+            android:text="Versão ..."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/infoUsuarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoSobre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="©2017\nNEPUT/UFV"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tituloSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Vida e Memória"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logoSobre"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/versaoSobre"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:onClick="sobreVidaMemoria"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/equipeSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fundo_texto_sobre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Desenvolvido por:"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/membrosEquipeSobre"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipeSobre"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:src="@drawable/lab_profile"
+         />
+
+    <TextView
+        android:id="@+id/EmailSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.labd2m.ufv.br"
+        android:textColorLink="#01118c"
+        android:textStyle="italic"
+        android:autoLink="web"
+        android:layout_below="@+id/membrosEquipeSobre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
