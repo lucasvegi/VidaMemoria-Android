@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
 
     public void scan(View view){
         requestCameraPermission();
-        scanQR();
     }
 
     public void scanQR(){
@@ -69,6 +68,9 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
 
                 // CAMERA_PERMISSION é uma constante declarada para ser usada no callback da resposta da permissão
             }
+        }else{
+            //faz escaneamento pois já tem permissão
+            scanQR();
         }
     }
 
